@@ -1,0 +1,36 @@
+.btn_primary {
+    background-color: #36613F;
+    padding: 16px;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.05em;
+    border-radius: 4px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: white;
+
+}
+
+.btn_primary_with_icon {
+    background-color: #36613F;
+    padding: 16px;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.05em;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 265px;
+    text-align: center;
+
+}
+
+.btn_primary_with_icon::after {
+    content: url('../../assets/Svg/buttonArrow.svg');
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+    width: 19.19px;
+    height: 11.98px;
+
+
+}

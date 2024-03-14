@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'Combon';
+    src: url('../src/assets/font/Cambon-Bold.woff2') format('woff2'),
+        url('../src/assets/font/Cambon-Bold.woff2') format('woff'),
+        url('../src/assets/font/Cambon-Bold.woff2') format('truetype');
+    font-weight: Bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Combon';
+    src: url('../src/assets/font/Cambon-LightItalic.woff2') format('woff2'),
+        url('../src/assets/font/Cambon-LightItalic.woff2') format('woff'),
+        url('../src/assets/font/Cambon-LightItalic.woff2') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Combon';
+    src: url('../src/assets/font/Cambon-Regular.woff2') format('woff2'),
+        url('../src/assets/font/Cambon-Regular.woff2') format('woff'),
+        url('../src/assets/font/Cambon-Regular.woff2') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Combon';
+    src: url('../src/assets/font/Cambon-BlackItalic.woff2') format('woff2'),
+        url('../src/assets/font/Cambon-BlackItalic.woff2') format('woff'),
+        url('../src/assets/font/Cambon-BlackItalic.woff2') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Combon';
+    src: url('../src/assets/font/Cambon-Light.woff2') format('woff2'),
+        url('../src/assets/font/Cambon-Light.woff2') format('woff'),
+        url('../src/assets/font/Cambon-Light.woff2') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Combon';
+    src: url('../src/assets/font/Cambon-SemiBoldItalic.woff2') format('woff2'),
+        url('../src/assets/font/Cambon-SemiBoldItalic.woff2') format('woff'),
+        url('../src/assets/font/Cambon-SemiBoldItalic.woff2') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Combon';
+    src: url('../src/assets/font/Cambon-LightItalic.woff2') format('woff2'),
+        url('../src/assets/font/Cambon-LightItalic.woff2') format('woff'),
+        url('../src/assets/font/Cambon-LightItalic.woff2') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Combon';
+    src: url('../src/assets/font/Cambon-Bold.woff2') format('woff2'),
+        url('../src/assets/font/Cambon-Bold.woff2') format('woff'),
+        url('../src/assets/font/Cambon-Bold.woff2') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Combon';
+    src: url('../src/assets/font/Cambon-MediumItalic.woff2') format('woff2'),
+        url('../src/assets/font/Cambon-MediumItalic.woff2') format('woff'),
+        url('../src/assets/font/Cambon-MediumItalic.woff2') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Combon';
+    src: url('../src/assets/font/Cambon-Medium.woff2') format('woff2'),
+        url('../src/assets/font/Cambon-Medium.woff2') format('woff'),
+        url('../src/assets/font/Cambon-Medium.woff2') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Combon';
+    src: url('../src/assets/font/Cambon-ExtraLightItalic.woff2') format('woff2'),
+        url('../src/assets/font/Cambon-ExtraLightItalic.woff2') format('woff'),
+        url('../src/assets/font/Cambon-ExtraLightItalic.woff2') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Combon';
+    src: url('../src/assets/font/Cambon-Black.woff2') format('woff2'),
+        url('../src/assets/font/Cambon-Black.woff2') format('woff'),
+        url('../src/assets/font/Cambon-Black.woff2') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Combon';
+    src: url('../src/assets/font/Cambon-ExtraBoldItalic.woff2') format('woff2'),
+        url('../src/assets/font/Cambon-ExtraBoldItalic.woff2') format('woff'),
+        url('../src/assets/font/Cambon-ExtraBoldItalic.woff2') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Combon';
+    src: url('../src/assets/font/Cambon-BoldItalic.woff2') format('woff2'),
+        url('../src/assets/font/Cambon-BoldItalic.woff2') format('woff'),
+        url('../src/assets/font/Cambon-BoldItalic.woff2') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Combon';
+    src: url('../src/assets/font/Cambon-ExtraBold.woff2') format('woff2'),
+        url('../src/assets/font/Cambon-ExtraBold.woff2') format('woff'),
+        url('../src/assets/font/Cambon-ExtraBold.woff2') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Combon';
+    src: url('../src/assets/font/Cambon-Italic.woff2') format('woff2'),
+        url('../src/assets/font/Cambon-Italic.woff2') format('woff'),
+        url('../src/assets/font/Cambon-Italic.woff2') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Combon';
+    src: url('../src/assets/font/Cambon-SemiBold.woff2') format('woff2'),
+        url('../src/assets/font/Cambon-SemiBold.woff2') format('woff'),
+        url('../src/assets/font/Cambon-SemiBold.woff2') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Combon';
+    src: url('../src/assets/font/Cambon-SemiBold.woff2') format('woff2'),
+        url('../src/assets/font/Cambon-SemiBold.woff2') format('woff'),
+        url('../src/assets/font/Cambon-SemiBold.woff2') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    font-family: "Inter", sans-serif ;
+}
