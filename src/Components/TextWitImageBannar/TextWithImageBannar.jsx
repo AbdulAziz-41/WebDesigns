@@ -27,7 +27,9 @@ const TextWithImageBannar = ({
   );
 };
 
-export default function MultipleBannars() {
+export default function MultipleBannars({
+  
+}) {
   return (
     <>
       <div className="bg-[#EFEFEF]">
