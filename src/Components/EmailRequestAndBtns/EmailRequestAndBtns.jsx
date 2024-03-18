@@ -1,5 +1,9 @@
 import ButtonGroup from "../../Components/HowItsWork/buttonsGroup";
-export default function EmailRequestAndBtns({ bg_color, btnColor }) {
+export default function EmailRequestAndBtns({
+  bg_color,
+  google_Btn,
+  linkedin_btn,
+}) {
   return (
     <>
       <div className={` ${bg_color} `}>
@@ -21,11 +25,15 @@ export default function EmailRequestAndBtns({ bg_color, btnColor }) {
           </div>
           <div className="flex justify-center">
             <div className="OrDiv">
-              <h2 className="px-4 text-[16px] leading-[24px]">or</h2>
+              <h2 className="px-4 text-[16px] leading-[24px] text-white">or</h2>
             </div>
           </div>
           <div>
-            <ButtonGroup btnColor={btnColor} />
+            <ButtonGroup
+              Group_btn_class="w-full  "
+              google_Btn={google_Btn}
+              linkedin_btn={linkedin_btn}
+            />
           </div>
         </div>
       </div>

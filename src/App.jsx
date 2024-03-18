@@ -8,6 +8,8 @@ import InvestPage from "./Pages/InvestPage/InvestPage";
 import HowItsWorkPage from "./Pages/HowItsWorkPage/HowItsWorkPage";
 import WhyFilmPage from "./Pages/WhyFilmPage/WhyFilmPage";
 import AboutUsPage from "./Pages/AboutPage/AboutUsPage";
+import LoginPage from "./Pages/LoginPage/LoginPage";
+import ApplyForMemberShipPage from "./Pages/ApplyForMemberShipPage/ApplyforMemberShipPage";
 
 function App() {
   return (
@@ -20,6 +22,11 @@ function App() {
           <Route path="/howitwork" element={<HowItsWorkPage />} />
           <Route path="/whyfilm" element={<WhyFilmPage />} />
           <Route path="/About" element={<AboutUsPage />} />
+          <Route path="/loginIn" element={<LoginPage />} />
+          <Route
+            path="/applyformembership"
+            element={<ApplyForMemberShipPage />}
+          />
         </Routes>
         <Footer />
       </div>

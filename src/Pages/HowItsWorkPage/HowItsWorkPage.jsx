@@ -24,7 +24,8 @@ export default function HowItsWorkPage() {
       <HowItsWork bg_color="bg-[#EFEFEF] " text_color={"text-[#272727]"} />
       <EmailRequestAndBtns
         bg_color="bg-[#EFEFEF]  "
-        btnColor={"border-[#498856]"}
+        google_Btn=" !border-[#36613F]  "
+        linkedin_btn=" !border-[#36613F] "
       />
       <TextWithImageHIsWBannar
         bannarSpanclass=""

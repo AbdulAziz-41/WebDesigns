@@ -39,9 +39,11 @@ export default function WhyFilmPage() {
         "
         heading_class="lg:max-w-[350px] w-full"
       />
+
       <EmailRequestAndBtns
-        bg_color="bg-[#EFEFEF] pt-[172px]  "
-        btnColor={"border-[#498856]"}
+        bg_color="bg-[#EFEFEF]  pt-[172px]  "
+        google_Btn=" !border-[#36613F]  "
+        linkedin_btn=" !border-[#36613F] "
       />
     </>
   );
