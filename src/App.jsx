@@ -7,6 +7,7 @@ import Footer from "./Components/Footer/Footer";
 import InvestPage from "./Pages/InvestPage/InvestPage";
 import HowItsWorkPage from "./Pages/HowItsWorkPage/HowItsWorkPage";
 import WhyFilmPage from "./Pages/WhyFilmPage/WhyFilmPage";
+import AboutUsPage from "./Pages/AboutPage/AboutUsPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/invest" element={<InvestPage />} />
           <Route path="/howitwork" element={<HowItsWorkPage />} />
           <Route path="/whyfilm" element={<WhyFilmPage />} />
+          <Route path="/About" element={<AboutUsPage />} />
         </Routes>
         <Footer />
       </div>

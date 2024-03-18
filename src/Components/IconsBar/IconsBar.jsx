@@ -4,9 +4,11 @@ import upwork from "../../assets/Svg/upwork.svg";
 import thrive from "../../assets/Svg/thrive.svg";
 import instaCart from "../../assets/Svg/instaCart.svg";
 import pinterest from "../../assets/Svg/pinterest.svg";
-export default function IconsBar() {
+export default function IconsBar({ mainContaner }) {
   return (
-    <div className="bg-[#37513C] flex justify-center gap-x-14 py-[40px] sm:py-[70px] md:py-[90px]    lg:py-[117px] flex-wrap gap-y-8 border-b border-gray-300   ">
+    <div
+      className={`bg-[#37513C] flex justify-center gap-x-14 py-[40px] sm:py-[70px] md:py-[90px]    lg:py-[117px] flex-wrap gap-y-8 border-b border-gray-300   ${mainContaner} `}
+    >
       <img src={instaCart} alt="" />
       <img src={upwork} alt="" />
       <img src={pinterest} alt="" />
