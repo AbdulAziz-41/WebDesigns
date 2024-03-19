@@ -19,10 +19,12 @@ export default function Home() {
       <RecentOffers />
       <HistoryChart />
       <BarChart />
-      <HowItsWork bg_color="bg-[#36493A] " />
+      <HowItsWork bg_color="bg-[#36493A] text-white! " />
       <EmailRequestAndBtns
-        bg_color={"bg-[#36493A]"}
-        btnColor={"border-[#EFEFEF] !text-white"}
+        bg_color={"bg-[#36493A] "}
+        btnColor="border-[#EFEFEF] !text-white"
+        google_Btn="!text-white"
+        linkedin_btn="!text-white"
       />
       <FriquentlyAskedQuestions />
     </>
