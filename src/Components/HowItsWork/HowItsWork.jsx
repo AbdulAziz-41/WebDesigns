@@ -1,4 +1,7 @@
 import EmailRequestAndBtns from "../EmailRequestAndBtns/EmailRequestAndBtns";
+import stars from "../../assets/Svg/stars.svg";
+import sell from "../../assets/Svg/sell.svg";
+import family from "../../assets/Svg/family.svg";
 import ButtonGroup from "./buttonsGroup";
 import "./howitsWork.css";
 import HowitsWorkCard from "./HowitsWorkCard";
@@ -23,7 +26,17 @@ export default function HowItsWork({ bg_color, text_color }) {
               </h1>
             </div>
             <div className="">
-              <HowitsWorkCard />
+              <HowitsWorkCard
+                card1_Img={stars}
+                card1_heading="We find high rating films"
+                card1_discription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin risus imperdiet"
+                card3_Img={sell}
+                card2_heading="We Purchase the Film"
+                card2_discription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin risus imperdiet"
+                card2_Img={family}
+                card3_heading="Sell Your Sharesm"
+                card3_discription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin risus imperdiet"
+              />
             </div>
           </div>
         </div>

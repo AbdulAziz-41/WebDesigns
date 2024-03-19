@@ -40,3 +40,7 @@ body {
 .bannar_Sub_Heading {
     @apply font-combon font-normal text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[22px] lg:leading-[25px]
 }
+
+.list_item {
+    @apply font-poppins font-normal text-[#D4D4D4] text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] leading-[20px] sm:leading-[22px] md:leading-[22px] lg:leading-[25px]
+}

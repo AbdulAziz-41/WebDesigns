@@ -21,7 +21,8 @@ export default function HowItsWorkPage() {
         bannar_heading="Leveraging the power of the "
         bannar_subheading="Since inception, we’ve offered over $700mm in blue chip contemporary art investments, exemplifying not only the success of our strategy, but the favorable performance of this asset class."
       />
-      <HowItsWork bg_color="bg-[#EFEFEF] " text_color={"text-[#272727]"} />
+      <HowItsWork bg_color="bg-[#EFEFEF] " text_color={"text-[#272727]"}
+       />
       <EmailRequestAndBtns
         bg_color="bg-[#EFEFEF]  "
         google_Btn=" !border-[#36613F]  "

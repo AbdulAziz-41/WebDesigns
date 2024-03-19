@@ -1,7 +1,8 @@
 import "./Header.css";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import menuIcon from "../../assets/Svg/menu_Icon.svg";
+// import { AuthContext } from "../../../AuthContext";
 export default function Header() {
   return (
     <>
@@ -30,19 +31,25 @@ export default function Header() {
               <Link className="py-[23px]" to="invest">
                 Invest Page
               </Link>
+              <Link className="py-[23px]" to="portfolio">
+                My Portfolio
+              </Link>
+              <Link className="py-[23px]" to="Invite">
+                Invite
+              </Link>
             </div>
             <div className=" pl-[20px] flex sm:hidden lg:hidden  ">
               <Link to="#">
                 <img src={menuIcon} alt="Menu Icon" />
               </Link>
             </div>
-            <a
+            <NavLink
               className="py-[23px] mr-[12px] px-[48px] border-x-[0.5px    ] border-[#9A9A9A] 
             "
-              href="priceD"
+              to="/login"
             >
-              SignOut
-            </a>
+              Sign In
+            </NavLink>
           </div>
         </div>
       </div>

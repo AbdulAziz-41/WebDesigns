@@ -13,6 +13,7 @@ import ApplyForMemberShipPage from "./Pages/ApplyForMemberShipPage/ApplyforMembe
 import InvitePage from "./Pages/InvitePage/InvitePage";
 import ProfilePage from "./Pages/ProfilePage/ProfilePage";
 import ProfileForm from "./Components/ProfileTabs/ProfileForm";
+import PortfolioPage from "./Pages/PortfolioPage/PortfolioPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/whyfilm" element={<WhyFilmPage />} />
         <Route path="/About" element={<AboutUsPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
         <Route
           path="/applyformembership"
           element={<ApplyForMemberShipPage />}

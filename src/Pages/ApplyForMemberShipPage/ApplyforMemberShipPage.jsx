@@ -10,6 +10,7 @@ import VerticalSlider from "../../Components/VerticleSlider/VerticleSlider";
 import CenterMode from "../../Components/OurStatsSlider/slickSlider";
 import VerticleMode from "../../Components/VerticleSlider/VerticleSlider";
 import IconsBar from "../../Components/IconsBar/IconsBar";
+import TestMode from "../../Components/OurStatsSlider/Test";
 
 export default function ApplyForMemberShipPage() {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -59,9 +60,7 @@ export default function ApplyForMemberShipPage() {
                 </h1>
               </div>
               <div className="flex flex-col gap-6 items-center">
-                <h1
-                  className="w-full text-left font-semibold text-[16px] leading-[22.4px]  tracking-[.02em] "
-                >
+                <h1 className="w-full text-left font-semibold text-[16px] leading-[22.4px]  tracking-[.02em] ">
                   SUBMIT YOUR MEMBERSHIP APPLICATION
                 </h1>
                 <div className="w-full flex gap-4">
@@ -149,6 +148,7 @@ export default function ApplyForMemberShipPage() {
               </div>
             </form>
           </div>
+          <div className="w-1/2   ">{/* <TestMode /> */}</div>
         </div>
       </div>
       <IconsBar />
