@@ -8,7 +8,10 @@ export default function EmailBannar() {
               <h2 className="text-[32px] font-combon font-semibold leading-[44.8px]">
                 Join our newsletter
               </h2>
-              <p className="text-[18px]  leading-[30.6px] tracing-[ -0.05em] opacity-[70%] ">
+              <p
+                className="text-[18px]  leading-[30.6px] tracking
+-[ -0.05em] opacity-[70%] "
+              >
                 Join us to receive news, updates and stories on our company.
               </p>
             </div>

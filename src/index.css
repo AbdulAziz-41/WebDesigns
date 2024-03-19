@@ -26,7 +26,11 @@ body {
 }
 
 .howitsWorkCards {
-    @apply py-9 rounded-[8px] px-4 flex bg-white text-black gap-x-6 flex-col justify-between sm:flex-col lg:flex-row items-center
+    @apply py-9 text-left rounded-[8px] px-4 flex bg-white text-black gap-x-6 flex-col justify-between sm:flex-col lg:flex-row items-center w-full font-extrabold
+}
+
+.howitsWorkCardsheading {
+    @apply leading-[22.4px] sm:leading-[22.4px] md:leading-[22.4px] lg:leading-[22.4px] text-[16px] sm:text-[16px] md:text-[16px] lg:text-[16px]
 }
 
 .bannar_heading {

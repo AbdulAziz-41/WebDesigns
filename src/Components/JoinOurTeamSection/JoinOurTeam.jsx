@@ -24,10 +24,12 @@ export default function JoinOurTeam() {
                 <p className="text-base leading-[19.2px] font-semibold">PTO</p>
               </div>
               <div className="w-[63%] flex gap-6 flex-col">
-                <h1 className="text-[28px] leading-[39.2px] tracing-[-0.04em] font-semibold">
+                <h1 className="text-[28px] leading-[39.2px] tracking
+-[-0.04em] font-semibold">
                   PTO
                 </h1>
-                <p className="text-[18px] text-[#0E2435] leading-[28px] tracing-[-0.04em] font-normal ">
+                <p className="text-[18px] text-[#0E2435] leading-[28px] tracking
+-[-0.04em] font-normal ">
                   Paid time off for vacation, sick time, and corporate holidays
                   allows you to refresh and recharge.
                 </p>
@@ -39,10 +41,12 @@ export default function JoinOurTeam() {
                 <p className="text-base leading-[19.2px] font-semibold">PTO</p>
               </div>
               <div className="w-[63%] flex gap-6 flex-col">
-                <h1 className="text-[28px] leading-[39.2px] tracing-[-0.04em] font-semibold">
+                <h1 className="text-[28px] leading-[39.2px] tracking
+-[-0.04em] font-semibold">
                   PTO
                 </h1>
-                <p className="text-[18px] text-[#0E2435] leading-[28px] tracing-[-0.04em] font-normal ">
+                <p className="text-[18px] text-[#0E2435] leading-[28px] tracking
+-[-0.04em] font-normal ">
                   Paid time off for vacation, sick time, and corporate holidays
                   allows you to refresh and recharge.
                 </p>
@@ -54,10 +58,12 @@ export default function JoinOurTeam() {
                 <p className="text-base leading-[19.2px] font-semibold">PTO</p>
               </div>
               <div className="w-[63%] flex gap-6 flex-col">
-                <h1 className="text-[28px] leading-[39.2px] tracing-[-0.04em] font-semibold">
+                <h1 className="text-[28px] leading-[39.2px] tracking
+-[-0.04em] font-semibold">
                   PTO
                 </h1>
-                <p className="text-[18px] text-[#0E2435] leading-[28px] tracing-[-0.04em] font-normal ">
+                <p className="text-[18px] text-[#0E2435] leading-[28px] tracking
+-[-0.04em] font-normal ">
                   Paid time off for vacation, sick time, and corporate holidays
                   allows you to refresh and recharge.
                 </p>
@@ -69,10 +75,12 @@ export default function JoinOurTeam() {
                 <p className="text-base leading-[19.2px] font-semibold">PTO</p>
               </div>
               <div className="w-[63%] flex gap-6 flex-col">
-                <h1 className="text-[28px] leading-[39.2px] tracing-[-0.04em] font-semibold">
+                <h1 className="text-[28px] leading-[39.2px] tracking
+-[-0.04em] font-semibold">
                   PTO
                 </h1>
-                <p className="text-[18px] text-[#0E2435] leading-[28px] tracing-[-0.04em] font-normal ">
+                <p className="text-[18px] text-[#0E2435] leading-[28px] tracking
+-[-0.04em] font-normal ">
                   Paid time off for vacation, sick time, and corporate holidays
                   allows you to refresh and recharge.
                 </p>
@@ -84,10 +92,12 @@ export default function JoinOurTeam() {
                 <p className="text-base leading-[19.2px] font-semibold">PTO</p>
               </div>
               <div className="w-[63%] flex gap-6 flex-col">
-                <h1 className="text-[28px] leading-[39.2px] tracing-[-0.04em] font-semibold">
+                <h1 className="text-[28px] leading-[39.2px] tracking
+-[-0.04em] font-semibold">
                   PTO
                 </h1>
-                <p className="text-[18px] text-[#0E2435] leading-[28px] tracing-[-0.04em] font-normal ">
+                <p className="text-[18px] text-[#0E2435] leading-[28px] tracking
+-[-0.04em] font-normal ">
                   Paid time off for vacation, sick time, and corporate holidays
                   allows you to refresh and recharge.
                 </p>

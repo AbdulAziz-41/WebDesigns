@@ -1,44 +1,51 @@
 import stars from "../../assets/Svg/stars.svg";
 import workcard from "../../assets/Svg/workcard.svg";
-const HowitsWorkCard = () => {
+const HowitsWorkCard = ({
+  card1_Img,
+  card1_heading,
+  card1_discription,
+  card2_Img,
+  card2_heading,
+  card2_discription,
+  card3_Img,
+  card3_heading,
+  card3_discription,
+}) => {
   return (
     <>
-      <div className="flex pt-[50px]  flex-col items-center md:flex-row">
+      <div className="flex pt-[50px]  flex-col  md:flex-row">
         <div className="howitsWorkCards">
-          <img src={stars} alt="" />
+          <img src={card1_Img} alt="" />
           <div>
-            <h1 className="secondery_heading font-combon font-bold ">
-              We find high rating films
+            <h1 className="howitsWorkCardsheading font-combon font-bold ">
+              {card1_heading}
             </h1>
             <p className="text-[12px] leading-[20px] tracking-[-1%]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              risus imperdiet
+              {card1_discription}
             </p>
           </div>
         </div>
         <img src={workcard} alt="" />
         <div className="howitsWorkCards ">
-          <img src={stars} alt="" />
+          <img src={card2_Img} alt="" />
           <div>
-            <h1 className="secondery_heading font-combon font-bold   ">
-              We Purchase the Film
+            <h1 className="howitsWorkCardsheading font-combon font-bold   ">
+              {card2_heading}
             </h1>
             <p className="text-[12px] leading-[20px] tracking-[-1%]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              risus imperdiet
+              {card2_discription}
             </p>
           </div>
         </div>
         <img src={workcard} alt="" />
         <div className="howitsWorkCards">
-          <img src={stars} alt="" />
+          <img src={card3_Img} alt="" />
           <div>
-            <h1 className="secondery_heading  font-combon font-bold  ">
-              Sell Your Sharesm
+            <h1 className="howitsWorkCardsheading  font-combon font-bold  ">
+              {card3_heading}
             </h1>
             <p className="text-[12px] leading-[20px] tracking-[-1%] ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              risus imperdiet
+              {card3_discription}
             </p>
           </div>
         </div>

@@ -1,8 +1,46 @@
+import React, { useState, useEffect, useRef } from "react";
+import "./applyforMemberShippage.css";
 import { NavLink } from "react-router-dom";
+import intlTelInput from "intl-tel-input";
+import "intl-tel-input/build/css/intlTelInput.css";
 import EmailRequestAndBtns from "../../Components/EmailRequestAndBtns/EmailRequestAndBtns";
 import ButtonGroup from "../../Components/HowItsWork/buttonsGroup";
 import loginbg from "../../assets/images/loginbg.png";
+import VerticalSlider from "../../Components/VerticleSlider/VerticleSlider";
+import CenterMode from "../../Components/OurStatsSlider/slickSlider";
+import VerticleMode from "../../Components/VerticleSlider/VerticleSlider";
+import IconsBar from "../../Components/IconsBar/IconsBar";
+
 export default function ApplyForMemberShipPage() {
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const phoneInputRef = useRef(null);
+  const intlTelInputInstance = useRef(null);
+
+  useEffect(() => {
+    if (phoneInputRef.current) {
+      intlTelInputInstance.current = intlTelInput(phoneInputRef.current, {
+        separateDialCode: true,
+        initialCountry: "in",
+      });
+
+      phoneInputRef.current.addEventListener("countrychange", () => {
+        const currentNumber = intlTelInputInstance.current.getNumber();
+        setPhoneNumber(currentNumber);
+      });
+    }
+
+    return () => {
+      if (intlTelInputInstance.current) {
+        intlTelInputInstance.current.destroy();
+      }
+    };
+  }, []);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log({ phoneNumber });
+  };
+
   return (
     <div className="relative bg-[#36493A]">
       <img
@@ -10,81 +48,110 @@ export default function ApplyForMemberShipPage() {
         src={loginbg}
         alt=""
       />
-      <form className="relative">
-        <div className="p-10 md:p-20">
+      <div className="relative">
+        <div className="p-10 md:p-20 flex gap-36 ">
           <div className="bg-white px-8 py-8  sm:px-14 sm:py-[72px] w-full  lg:w-1/2 rounded-[8px]">
-            <div className="pb-12">
-              <p className="learn_more pb-4">Join us</p>
-              <h1 className="primary_heading heading font-medium">
-                Apply for membership
-              </h1>
-            </div>
-            <div className="flex flex-col gap-6 items-center">
-              <h1 className="w-full text-left font-semibold text-[16px] leading-[22.4px]  tracing-[.02em] ">
-                SUBMIT YOUR MEMBERSHIP APPLICATION
-              </h1>
-              <div className="w-full flex gap-4">
+            <form>
+              <div className="pb-12">
+                <p className="learn_more pb-4">Join us</p>
+                <h1 className="primary_heading heading font-medium">
+                  Apply for membership
+                </h1>
+              </div>
+              <div className="flex flex-col gap-6 items-center">
+                <h1
+                  className="w-full text-left font-semibold text-[16px] leading-[22.4px]  tracking-[.02em] "
+                >
+                  SUBMIT YOUR MEMBERSHIP APPLICATION
+                </h1>
+                <div className="w-full flex gap-4">
+                  <div className="flex flex-col gap-3  w-full ">
+                    <label htmlFor="">First Name</label>
+                    <input
+                      className="border text-[16px] leading-[24px] tracking-[-0.05em]  border-[#C4C4C4] px-[14px] py-4 outline-none font-normal"
+                      placeholder="Enter your first name"
+                      type="text"
+                    />
+                  </div>
+
+                  <div className="flex flex-col gap-3  w-full  ">
+                    <label htmlFor="">Last Name</label>
+                    <input
+                      className="border border-[#C4C4C4] px-[14px] py-4 outline-none"
+                      placeholder="Enter your last name"
+                      type="password"
+                    />
+                  </div>
+                </div>
                 <div className="flex flex-col gap-3  w-full ">
-                  <label htmlFor="">First Name</label>
+                  <label htmlFor=""> Eamil Address</label>
                   <input
                     className="border text-[16px] leading-[24px] tracking-[-0.05em]  border-[#C4C4C4] px-[14px] py-4 outline-none font-normal"
-                    placeholder="Enter your first name"
+                    placeholder="enter email address"
                     type="text"
                   />
                 </div>
-                <div className="flex flex-col gap-3  w-full  ">
-                  <label htmlFor="">Last Name</label>
+                <div className="flex flex-col gap-3  w-full">
+                  <label htmlFor="mobile_code">Contact Number</label>
                   <input
-                    className="border border-[#C4C4C4] px-[14px] py-4 outline-none"
-                    placeholder="Enter your last name"
-                    type="password"
+                    ref={phoneInputRef}
+                    type="tel"
+                    id="mobile_code"
+                    className="w-full border text-[16px] leading-[24px] tracking-[-0.05em]  border-[#C4C4C4] px-[14px] py-4 outline-none font-normal"
+                    placeholder="Phone Number"
                   />
                 </div>
+                <div className="flex flex-col gap-3  w-full  ">
+                  <label htmlFor="">Password</label>
+                  <input
+                    className="border border-[#C4C4C4] px-[14px] py-4 outline-none"
+                    placeholder="enter password"
+                    type="password"
+                  />
+                  <p className="font-normal text-[12px] leading-[18px] text-[#A9A9A9]">
+                    Must be 6 or more characters, and include a lowercase
+                    letter, an uppercase letter, and a number
+                  </p>
+                </div>
+                <NavLink
+                  to="/request"
+                  className="btn_primary_with_icon block  !max-w-full text-white"
+                >
+                  Request Invitation
+                </NavLink>
+                <div className="flex gap-4 items-center">
+                  <NavLink
+                    to="/request"
+                    className=" block text-center font-normal text-[18px] leading-[18px] tracking-[-.05em] text-[#36613F] !max-w-full "
+                  >
+                    Forgot your password?
+                  </NavLink>
+                  <p>|</p>
+                  <NavLink
+                    to="/request"
+                    className=" block text-center font-normal text-[18px] leading-[18px] tracking-[-.05em] text-[#36613F] !max-w-full "
+                  >
+                    Sign in
+                  </NavLink>
+                </div>
+                <div className="bg-[#C1D6C5] h-[1px] w-full text-center my-8  "></div>
+                <p className="text-[15px] leading-[22.4px] text-center font-normal">
+                  By clicking "Request Invitation", I agree to Masterworks’{" "}
+                  <span className="text-[#36613F] border-b border-[#36613F] ">
+                    <NavLink to="/request">Terms of Use</NavLink>
+                  </span>
+                  (which require that disputes be resolved through binding
+                  arbitration) and its
+                  <span className="text-[#36613F] border-b border-[#36613F] ">
+                    <NavLink to="/request"> Privacy Policy.</NavLink>
+                  </span>
+                </p>
               </div>
-              <div className="flex flex-col gap-3  w-full ">
-                <label htmlFor=""> Eamil Address</label>
-                <input
-                  className="border text-[16px] leading-[24px] tracking-[-0.05em]  border-[#C4C4C4] px-[14px] py-4 outline-none font-normal"
-                  placeholder="Exter email address"
-                  type="text"
-                />
-              </div>
-              <div className="flex flex-col gap-3  w-full  ">
-                <label htmlFor="">Password</label>
-                <input
-                  className="border border-[#C4C4C4] px-[14px] py-4 outline-none"
-                  placeholder="Exter password"
-                  type="password"
-                />
-              </div>
-
-              <NavLink
-                to="/request"
-                className="btn_primary_with_icon block  !max-w-full text-white"
-              >
-                Sign in
-              </NavLink>
-              <NavLink
-                to="/request"
-                className=" block text-center font-normal text-[18px] leading-[18px] tracking-[-.05em] text-[#36613F] !max-w-full "
-              >
-                Forgot your password?
-              </NavLink>
-              <div className="bg-[#C1D6C5] h-[1px] w-1/2 text-center my-8  "></div>
-              <div className="w-full ">
-                <ButtonGroup
-                  Group_btn_class="w-full !flex-col  "
-                  google_Btn="bg-[#4284F3] text-white"
-                  linkedin_btn="bg-[#0B65C2] text-white"
-                />
-              </div>
-              <a className="btn_secondary " href="">
-                Request Invitation
-              </a>
-            </div>
+            </form>
           </div>
         </div>
-      </form>
+      </div>
+      <IconsBar />
     </div>
   );
 }

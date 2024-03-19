@@ -7,7 +7,7 @@ import pinterest from "../../assets/Svg/pinterest.svg";
 export default function IconsBar({ mainContaner }) {
   return (
     <div
-      className={`bg-[#37513C] flex justify-center gap-x-14 py-[40px] sm:py-[70px] md:py-[90px]    lg:py-[117px] flex-wrap gap-y-8 border-b border-gray-300   ${mainContaner} `}
+      className={`bg-[#36493A] flex justify-center gap-x-14 py-[40px] sm:py-[70px] md:py-[90px]    lg:py-[117px] flex-wrap gap-y-8 border-b border-gray-300   ${mainContaner} `}
     >
       <img src={instaCart} alt="" />
       <img src={upwork} alt="" />
