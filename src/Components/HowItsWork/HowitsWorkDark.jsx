@@ -1,6 +1,9 @@
 import ButtonGroup from "./buttonsGroup";
 import Features from "./Featues";
 import "./howitsWork.css";
+import stars from "../../assets/Svg/stars.svg";
+import sell from "../../assets/Svg/stars.svg";
+import family from "../../assets/Svg/stars.svg";
 import HowitsWorkCard from "./HowitsWorkCard";
 export default function HowItsWorkDark() {
   return (
@@ -15,7 +18,17 @@ export default function HowItsWorkDark() {
                 How its Woks
               </h1>
               <div className="pb-9">
-                <HowitsWorkCard />
+                <HowitsWorkCard
+                  card1_Img={stars}
+                  card1_heading="We find high rating films"
+                  card1_discription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin risus imperdiet"
+                  card3_Img={sell}
+                  card2_heading="We Purchase the Film"
+                  card2_discription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin risus imperdiet"
+                  card2_Img={family}
+                  card3_heading="Sell Your Sharesm"
+                  card3_discription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin risus imperdiet"
+                />
               </div>
             </div>
             <h1 className=" text-center md:text-left lg:w-[55%] text-[17px] leading-[23.8px] text-black  lg;pt-10  ">

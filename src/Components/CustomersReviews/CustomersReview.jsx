@@ -54,14 +54,14 @@ const reviewsData = [
 export default function CustomersReview() {
   return (
     <div className="bg-[#37513C]">
-      <div className="max-w-[1440px] mx-auto px-4 pt-2 sm:pt-8 md:pt-14 lg:pt-24 pb-7 sm:pb-20 md:pb-32 lg:pb-48 sm:px-20 md:px-40 lg:px-[204px]">
+      <div className="max-w-[1440px] mx-auto  pt-2 sm:pt-8 md:pt-14 lg:pt-24 pb-7 sm:pb-20 md:pb-32 lg:pb-48 px-3 sm:px-10 md:px-16 lg:px-[204px]">
         <div className="text-center">
           <p className="primary_heading heading text-white">
             What our customers say
           </p>
         </div>
         <div className=" p-8">
-          <div className=" grid-container">
+          <div className=" grid-container flex flex-col sm:grid  md:grid-cols-2 lg:grid-cols-3 gap-[10px] ">
             {reviewsData.map((review, index) => (
               <CustomerReviewCard
                 key={index}

@@ -1,4 +1,5 @@
 import EmailBannar from "./Emailbannar";
+import { Link, NavLink, useNavigate, useLocation } from "react-router-dom";
 import RequestInvetation from "./RequestInvetation";
 import facbook from "../../assets/Svg/facebook.svg";
 import Google from "../../assets/Svg/Google.svg";
@@ -68,21 +69,22 @@ export default function Footer() {
                   <p className="text-[16px] leading-[25.6px] tracking-[8%] font-medium text-[#75B482] pb-6 ">
                     MAIN LINKS
                   </p>
-                  <a href="">
+                  <Link to="/howitwork">
                     <li className="text-[16px] leading-[25.6px] pb-4 opacity-[70%] ">
                       How it Works
                     </li>
-                  </a>
-                  <a href="">
+                  </Link>
+                  <Link className="" to="whyfilm">
                     <li className="text-[16px] leading-[25.6px] pb-4 opacity-[70%] ">
                       Why Film
                     </li>
-                  </a>
-                  <a href="">
+                  </Link>
+
+                  <Link className="py-[23px]" to="About">
                     <li className="text-[16px] leading-[25.6px] pb-4 opacity-[70%] ">
                       About
                     </li>
-                  </a>
+                  </Link>
                   <a href="">
                     <li className="text-[16px] leading-[25.6px] pb-4 opacity-[70%] ">
                       Price Database

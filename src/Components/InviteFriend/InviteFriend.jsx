@@ -7,18 +7,18 @@ import firstInvestment from "../../assets/images/firstInvestment.png";
 export default function InviteFriend() {
   return (
     <div className="bg-[#37513C]">
-      <div className="max-w-[1440px] mx-auto py-[142px] sm:py-[142px] md:py-[142px] lg:py-[142px] pl-[133px] sm:pl-[133px] md:pl-[133px] lg:pl-[133px] pr-[148px] sm:pr-[148px] md:pr-[148px] lg:pr-[148px] text-white">
-        <div className=" flex flex-row ">
-          <div className="w-[55%]">
+      <div className="max-w-[1440px] mx-auto py-10 sm:py-[70px] md:py-[100px] lg:py-[142px] pl-8 sm:pl-16 md:pl-24 lg:pl-[133px] pr-8 sm:pr-16 md:pr-24 lg:pr-[148px] text-white">
+        <div className=" flex flex-col-reverse items-center text-center sm:text-left gap-y-5 sm:flex-row ">
+          <div className="w-full sm:w-[55%]">
             <h1 className="heading text-[30px] sm:text-[30px] md:text-[40px] lg:text-[48px] leading-[  57.6px] font-medium ">
               Invite your friends
             </h1>
-            <p className="text-[24px] font-normal leading-[33.6px] tracking-[ -0.05em]">
+            <p className="text-[14px] sm:text-[17px] md:text-[19px] lg:text-[24px] leading-[22px] sm:leading-[22px] md:leading-[22px] lg:leading-[33px] font-normal tracking-[ -0.05em]">
               Share your experience. Send an invite to your friends and family
               and we’ll let them skip the waitlist to get access immediately.
             </p>
           </div>
-          <div className="w-[45%] flex gap-8 flex-col">
+          <div className=" w-full  sm:w-[45%] flex gap-8 flex-col">
             <div className="flex flex-col gap-3  w-full ">
               <label htmlFor="">Name</label>
               <input
@@ -49,7 +49,7 @@ export default function InviteFriend() {
             </NavLink>
           </div>
         </div>
-        <div className="text-center pt-[74px]">
+        <div className="pt-[74px]">
           <h1 className="text-[24px] leading-[33.6px] tracking-[-.04em]">
             How it Works
           </h1>

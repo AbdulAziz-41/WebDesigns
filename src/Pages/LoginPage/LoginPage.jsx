@@ -1,8 +1,21 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import EmailRequestAndBtns from "../../Components/EmailRequestAndBtns/EmailRequestAndBtns";
 import ButtonGroup from "../../Components/HowItsWork/buttonsGroup";
 import loginbg from "../../assets/images/loginbg.png";
+import { useAuth } from "../../../AuthContext";
 export default function LoginPage() {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const { login } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    login(username, password);
+    navigate("/");
+  };
+
   return (
     <>
       <div className="relative bg-[#36493A]">
@@ -11,7 +24,7 @@ export default function LoginPage() {
           src={loginbg}
           alt=""
         />
-        <form className="relative">
+        <form className="relative" onSubmit={handleLogin}>
           <div className="p-10 md:p-20">
             <div className="bg-white px-8 py-8  sm:px-14 sm:py-[72px] w-full  lg:w-1/2 rounded-[8px]">
               <div className="pb-12">
@@ -27,6 +40,8 @@ export default function LoginPage() {
                     className="border text-[16px] leading-[24px] tracking-[-0.05em]  border-[#C4C4C4] px-[14px] py-4 outline-none font-normal"
                     placeholder="Exter email address"
                     type="text"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
                   />
                 </div>
                 <div className="flex flex-col gap-3  w-full  ">
@@ -35,15 +50,18 @@ export default function LoginPage() {
                     className="border border-[#C4C4C4] px-[14px] py-4 outline-none"
                     placeholder="Exter password"
                     type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
 
-                <NavLink
+                <button
                   to="/request"
                   className="btn_primary_with_icon block  !max-w-full text-white"
+                  type="submit"
                 >
                   Sign in
-                </NavLink>
+                </button>
                 <NavLink
                   to="/request"
                   className=" block text-center font-normal text-[18px] leading-[18px] tracking-[-.05em] text-[#36613F] !max-w-full "
