@@ -128,7 +128,8 @@
     max-width: 1440px !important;
 }
 
-.slick-track {
+
+/* .slick-track {
     display: flex !important;
 }
 
@@ -142,10 +143,10 @@
 }
 
 .slick-slide {
-    width: 100% !important;
+    width: 100%;
 }
 
 .slick-slider .center {
     display: flex;
     justify-content: center;
-}
+} */

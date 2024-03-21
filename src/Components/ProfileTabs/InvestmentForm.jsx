@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import React, { useState, useEffect, useRef } from "react";
 import intlTelInput from "intl-tel-input";
 import "intl-tel-input/build/css/intlTelInput.css";
-export default function ProfileForm() {
+export default function InvestmentForm() {
   const [phoneNumber, setPhoneNumber] = useState("");
   const phoneInputRef = useRef(null);
   const intlTelInputInstance = useRef(null);

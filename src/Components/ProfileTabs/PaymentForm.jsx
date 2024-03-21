@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import React, { useState, useEffect, useRef } from "react";
 import intlTelInput from "intl-tel-input";
 import "intl-tel-input/build/css/intlTelInput.css";
-export default function ProfileForm() {
+export default function PaymentForm() {
   const [phoneNumber, setPhoneNumber] = useState("");
   const phoneInputRef = useRef(null);
   const intlTelInputInstance = useRef(null);
@@ -37,7 +37,7 @@ export default function ProfileForm() {
         <form>
           <div className="flex flex-col gap-6 items-center">
             <h1 className="w-full  text-left font-semibold text-[16px] leading-[22.4px]  tracking-[.02em] text-[#45684C] ">
-              INVESTMENT FORM
+              PAYMENT FORM
             </h1>
             <div className="bg-[#C1D6C5] h-[1px] w-full text-center mb-10 "></div>
             <div className="w-full flex gap-4">

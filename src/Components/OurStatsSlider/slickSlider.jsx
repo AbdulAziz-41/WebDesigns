@@ -24,7 +24,7 @@ function CenterMode() {
     centerMode: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    centerPadding: "25%",
+    centerPadding: "22%",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
@@ -56,133 +56,176 @@ function CenterMode() {
             </div>
           </div>
           <Slider ref={sliderRef} {...settings}>
-            <div>
-              <li className="relative p-14 bg-white list-none">
-                <img
-                  className="absolute top-5 right-[19px]"
-                  src={reverse}
-                  alt=""
-                />
-                <div className="flex flex-col">
+            <div className="p-4 bg-transparent">
+              <div>
+                <li className="relative p-14 bg-white list-none">
                   <img
-                    className="max-w-[139.16px] max-h-[76.54px]"
-                    src={slide1}
+                    className="absolute top-5 right-[19px]"
+                    src={reverse}
                     alt=""
                   />
-                  <div className="pt-[33.56px] w-full flex text-left gap-x-14">
-                    <div>
-                      <h1 className="text-[32px] font-semibold leading-[44.8px] text-nowrap">
-                        The Little Mermaid
-                      </h1>
-                    </div>
-                    <div>
-                      <h1>ANNUALIZED NET RETURN</h1>
-                      <h1 className="text-[20px] leading-[36px] text-nowrap">
-                        <span className="text-[52px] font-semibold leading-[93px]">
-                          64.0%
-                        </span>{" "}
-                        378 days held
-                      </h1>
+                  <div className="flex flex-col">
+                    <img
+                      className="max-w-[139.16px] max-h-[76.54px]"
+                      src={slide1}
+                      alt=""
+                    />
+                    <div className="pt-[33.56px] w-full flex text-left gap-x-14">
+                      <div>
+                        <h1 className="text-[32px] font-semibold leading-[44.8px] text-nowrap">
+                          The Little Mermaid
+                        </h1>
+                      </div>
+                      <div>
+                        <h1>ANNUALIZED NET RETURN</h1>
+                        <h1 className="text-[20px] leading-[36px] text-nowrap">
+                          <span className="text-[52px] font-semibold leading-[93px]">
+                            64.0%
+                          </span>{" "}
+                          378 days held
+                        </h1>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
+                </li>
+              </div>
             </div>
-            <div>
-              <li className="relative p-14 bg-white list-none">
-                <img
-                  className="absolute top-5 right-[19px]"
-                  src={reverse}
-                  alt=""
-                />
-                <div className="flex flex-col">
+            <div className="p-4 bg-transparent">
+              <div>
+                <li className="relative p-14 bg-white list-none">
                   <img
-                    className="max-w-[139.16px] max-h-[76.54px]"
-                    src={slide1}
+                    className="absolute top-5 right-[19px]"
+                    src={reverse}
                     alt=""
                   />
-                  <div className="pt-[33.56px] w-full flex text-left gap-x-14">
-                    <div>
-                      <h1 className="text-[32px] font-semibold leading-[44.8px] text-nowrap">
-                        The Little Mermaid
-                      </h1>
-                    </div>
-                    <div>
-                      <h1>ANNUALIZED NET RETURN</h1>
-                      <h1 className="text-[20px] leading-[36px]  text-nowrap">
-                        <span className="text-[52px] font-semibold leading-[93px]">
-                          64.0%
-                        </span>{" "}
-                        378 days held
-                      </h1>
+                  <div className="flex flex-col">
+                    <img
+                      className="max-w-[139.16px] max-h-[76.54px]"
+                      src={slide1}
+                      alt=""
+                    />
+                    <div className="pt-[33.56px] w-full flex text-left gap-x-14">
+                      <div>
+                        <h1 className="text-[32px] font-semibold leading-[44.8px] text-nowrap">
+                          The Little Mermaid
+                        </h1>
+                      </div>
+                      <div>
+                        <h1>ANNUALIZED NET RETURN</h1>
+                        <h1 className="text-[20px] leading-[36px] text-nowrap">
+                          <span className="text-[52px] font-semibold leading-[93px]">
+                            64.0%
+                          </span>{" "}
+                          378 days held
+                        </h1>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
+                </li>
+              </div>
             </div>
-            <div>
-              <li className="relative p-14 list-none bg-white">
-                <img
-                  className="absolute top-5 right-[19px]"
-                  src={reverse}
-                  alt=""
-                />
-                <div className="flex flex-col">
+            <div className="p-4 bg-transparent">
+              <div>
+                <li className="relative p-14 bg-white list-none">
                   <img
-                    className="max-w-[139.16px] max-h-[76.54px]"
-                    src={slide1}
+                    className="absolute top-5 right-[19px]"
+                    src={reverse}
                     alt=""
                   />
-                  <div className="pt-[33.56px] w-full flex text-left gap-x-14">
-                    <div>
-                      <h1 className="text-[32px] font-semibold leading-[44.8px] text-nowrap">
-                        The Little Mermaid
-                      </h1>
-                    </div>
-                    <div>
-                      <h1>ANNUALIZED NET RETURN</h1>
-                      <h1 className="text-[20px] leading-[36px] text-nowrap">
-                        <span className="text-[52px] font-semibold leading-[93px]">
-                          64.0%
-                        </span>{" "}
-                        378 days held
-                      </h1>
+                  <div className="flex flex-col">
+                    <img
+                      className="max-w-[139.16px] max-h-[76.54px]"
+                      src={slide1}
+                      alt=""
+                    />
+                    <div className="pt-[33.56px] w-full flex text-left gap-x-14">
+                      <div>
+                        <h1 className="text-[32px] font-semibold leading-[44.8px] text-nowrap">
+                          The Little Mermaid
+                        </h1>
+                      </div>
+                      <div>
+                        <h1>ANNUALIZED NET RETURN</h1>
+                        <h1 className="text-[20px] leading-[36px] text-nowrap">
+                          <span className="text-[52px] font-semibold leading-[93px]">
+                            64.0%
+                          </span>{" "}
+                          378 days held
+                        </h1>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
+                </li>
+              </div>
             </div>
-            <div>
-              <li className="relative p-14 bg-white list-none">
-                <img
-                  className="absolute top-5 right-[19px]"
-                  src={reverse}
-                  alt=""
-                />
-                <div className="flex flex-col">
+            <div className="p-4 bg-transparent">
+              <div>
+                <li className="relative p-14 bg-white list-none">
                   <img
-                    className="max-w-[139.16px] max-h-[76.54px]"
-                    src={slide1}
+                    className="absolute top-5 right-[19px]"
+                    src={reverse}
                     alt=""
                   />
-                  <div className="pt-[33.56px] w-full flex text-left gap-x-14">
-                    <div>
-                      <h1 className="text-[32px] font-semibold leading-[44.8px] text-nowrap">
-                        The Little Mermaid
-                      </h1>
-                    </div>
-                    <div>
-                      <h1>ANNUALIZED NET RETURN</h1>
-                      <h1 className="text-[20px] leading-[36px] text-nowrap">
-                        <span className="text-[52px] font-semibold leading-[93px]">
-                          64.0%
-                        </span>{" "}
-                        378 days held
-                      </h1>
+                  <div className="flex flex-col">
+                    <img
+                      className="max-w-[139.16px] max-h-[76.54px]"
+                      src={slide1}
+                      alt=""
+                    />
+                    <div className="pt-[33.56px] w-full flex text-left gap-x-14">
+                      <div>
+                        <h1 className="text-[32px] font-semibold leading-[44.8px] text-nowrap">
+                          The Little Mermaid
+                        </h1>
+                      </div>
+                      <div>
+                        <h1>ANNUALIZED NET RETURN</h1>
+                        <h1 className="text-[20px] leading-[36px] text-nowrap">
+                          <span className="text-[52px] font-semibold leading-[93px]">
+                            64.0%
+                          </span>{" "}
+                          378 days held
+                        </h1>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
+                </li>
+              </div>
+            </div>
+
+            <div className="p-4 bg-transparent">
+              <div>
+                <li className="relative p-14 bg-white list-none">
+                  <img
+                    className="absolute top-5 right-[19px]"
+                    src={reverse}
+                    alt=""
+                  />
+                  <div className="flex flex-col">
+                    <img
+                      className="max-w-[139.16px] max-h-[76.54px]"
+                      src={slide1}
+                      alt=""
+                    />
+                    <div className="pt-[33.56px] w-full flex text-left gap-x-14">
+                      <div>
+                        <h1 className="text-[32px] font-semibold leading-[44.8px] text-nowrap">
+                          The Little Mermaid
+                        </h1>
+                      </div>
+                      <div>
+                        <h1>ANNUALIZED NET RETURN</h1>
+                        <h1 className="text-[20px] leading-[36px] text-nowrap">
+                          <span className="text-[52px] font-semibold leading-[93px]">
+                            64.0%
+                          </span>{" "}
+                          378 days held
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </div>
             </div>
           </Slider>
           <div className="w-[90%]">

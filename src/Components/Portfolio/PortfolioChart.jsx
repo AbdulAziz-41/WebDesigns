@@ -4,8 +4,8 @@ import quest from "../../assets/Svg/quest.svg";
 export default function PortfolioChart() {
   return (
     <>
-      <div className="bg-[#37513C] pb-10">
-        <div className="max-w-[1440px] mx-auto  ">
+      <div className="bg-[#37513C] pb-10 flex">
+        <div className="max-w-[1440px] mx-auto  w-full -mt-[100px] ">
           <div>
             <div className="bg-white p-6 rounded-[24px] border-[5px] border-[#9F9F9F] ">
               <div className="flex flex-row gap-y-4   ">

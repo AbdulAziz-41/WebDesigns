@@ -14,6 +14,12 @@ import InvitePage from "./Pages/InvitePage/InvitePage";
 import ProfilePage from "./Pages/ProfilePage/ProfilePage";
 import ProfileForm from "./Components/ProfileTabs/ProfileForm";
 import PortfolioPage from "./Pages/PortfolioPage/PortfolioPage";
+import AccreditationForm from "./Components/ProfileTabs/AccreditationForm";
+import InvestmentForm from "./Components/ProfileTabs/InvestmentForm";
+import CommunicationForm from "./Components/ProfileTabs/CommuncationForm";
+import DocumentsForm from "./Components/ProfileTabs/DocumentsForm";
+import BrokecageAccountsForm from "./Components/ProfileTabs/BrokecageAccountsForm";
+import PaymentForm from "./Components/ProfileTabs/PaymentForm";
 
 function App() {
   return (
@@ -34,12 +40,15 @@ function App() {
         <Route path="/invite" element={<InvitePage />} />
         <Route path="/profile" element={<ProfilePage />}>
           <Route index element={<ProfileForm />} />
-          <Route path="accreditation" element={<ProfileForm />} />
-          <Route path="investment-history" element={<ProfileForm />} />
-          <Route path="payment-methods" element={<ProfileForm />} />
-          <Route path="brokerage-accounts" element={<ProfileForm />} />
-          <Route path="documents" element={<ProfileForm />} />
-          <Route path="communications" element={<ProfileForm />} />
+          <Route path="accreditation" element={<AccreditationForm />} />
+          <Route path="investment-history" element={<InvestmentForm />} />
+          <Route path="payment-methods" element={<PaymentForm />} />
+          <Route
+            path="brokerage-accounts"
+            element={<BrokecageAccountsForm />}
+          />
+          <Route path="documents" element={<DocumentsForm />} />
+          <Route path="communications" element={<CommunicationForm />} />
         </Route>
         <Route path="/logout" element={<LoginPage />} />
       </Routes>
