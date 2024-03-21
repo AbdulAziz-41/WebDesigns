@@ -45,7 +45,7 @@ export default function ApplyForMemberShipPage() {
       <img className="absolute -rotate-[-29.45°]  " src={loginbg} alt="" />
       <div className="max-w-[1440px] mx-auto">
         <div className="relative">
-          <div className="p-10 md:p-20 flex gap-36 ">
+          <div className="p-10 md:p-20 flex flex-col lg:flex-row lg:gap-36 ">
             <div className="bg-white px-8 py-8  sm:px-14 sm:py-[72px] w-full  lg:w-3/5 rounded-[8px]">
               <form>
                 <div className="pb-12">
@@ -143,7 +143,7 @@ export default function ApplyForMemberShipPage() {
                 </div>
               </form>
             </div>
-            <div className="w-2/5   ">
+            <div className=" w-full lg:w-2/5   ">
               <h1 className="font-poppins text-[20px] text-white leading-[28px]">
                 Track Records:
               </h1>

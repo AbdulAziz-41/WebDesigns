@@ -47,7 +47,7 @@ function VerticalMode() {
           <div>
             <li className="relative px-5 py-4 bg-white list-none">
               <img
-                className="absolute top-5 right-[19px]"
+                className="absolute top-5 right-[19px] w-[17px]"
                 src={reverse}
                 alt=""
               />
@@ -57,16 +57,16 @@ function VerticalMode() {
                   src={slide1}
                   alt=""
                 />
-                <div className="pt-[33.56px] w-full flex text-left gap-x-14">
+                <div className="pt-[33.56px] w-full flex text-left   justify-between">
                   <div>
-                    <h1 className="text-[22px] font-semibold leading-[44.8px] ">
+                    <h1 className="text-[19px] font-semibold leading-[20px] ">
                       The Little Mermaid
                     </h1>
                   </div>
                   <div>
                     <h1 className="text-[13px]  ">ANNUALIZED NET RETURN</h1>
-                    <h1 className="text-[20px] leading-[36px] ">
-                      <span className="text-[30px] font-semibold leading-[30px]">
+                    <h1 className="text-[18px] leading-[36px] ">
+                      <span className="text-[25px] font-semibold leading-[24px]">
                         64.0%
                       </span>
                       378 days held
@@ -81,7 +81,7 @@ function VerticalMode() {
           <div>
             <li className="relative px-5 py-4 bg-white list-none">
               <img
-                className="absolute top-5 right-[19px]"
+                className="absolute top-5 right-[19px] w-[17px]"
                 src={reverse}
                 alt=""
               />
@@ -91,16 +91,16 @@ function VerticalMode() {
                   src={slide1}
                   alt=""
                 />
-                <div className="pt-[33.56px] w-full flex text-left gap-x-14">
+                <div className="pt-[33.56px] w-full flex text-left  justify-between">
                   <div>
-                    <h1 className="text-[22px] font-semibold leading-[44.8px] ">
+                    <h1 className="text-[19px] font-semibold leading-[20px] ">
                       The Little Mermaid
                     </h1>
                   </div>
                   <div>
                     <h1 className="text-[13px]  ">ANNUALIZED NET RETURN</h1>
-                    <h1 className="text-[20px] leading-[36px] ">
-                      <span className="text-[30px] font-semibold leading-[30px]">
+                    <h1 className="text-[18px] leading-[36px] ">
+                      <span className="text-[25px] font-semibold leading-[24px]">
                         64.0%
                       </span>
                       378 days held
@@ -115,7 +115,7 @@ function VerticalMode() {
           <div>
             <li className="relative px-5 py-4 bg-white list-none">
               <img
-                className="absolute top-5 right-[19px]"
+                className="absolute top-5 right-[19px] w-[17px]"
                 src={reverse}
                 alt=""
               />
@@ -125,16 +125,16 @@ function VerticalMode() {
                   src={slide1}
                   alt=""
                 />
-                <div className="pt-[33.56px] w-full flex text-left gap-x-14">
+                <div className="pt-[33.56px] w-full flex text-left  justify-between">
                   <div>
-                    <h1 className="text-[22px] font-semibold leading-[44.8px] ">
+                    <h1 className="text-[19px] font-semibold leading-[20px] ">
                       The Little Mermaid
                     </h1>
                   </div>
                   <div>
                     <h1 className="text-[13px]  ">ANNUALIZED NET RETURN</h1>
-                    <h1 className="text-[20px] leading-[36px] ">
-                      <span className="text-[30px] font-semibold leading-[30px]">
+                    <h1 className="text-[18px] leading-[36px] ">
+                      <span className="text-[25px] font-semibold leading-[24px]">
                         64.0%
                       </span>
                       378 days held
@@ -149,7 +149,7 @@ function VerticalMode() {
           <div>
             <li className="relative px-5 py-4 bg-white list-none">
               <img
-                className="absolute top-5 right-[19px]"
+                className="absolute top-5 right-[19px] w-[17px]"
                 src={reverse}
                 alt=""
               />
@@ -159,16 +159,16 @@ function VerticalMode() {
                   src={slide1}
                   alt=""
                 />
-                <div className="pt-[33.56px] w-full flex text-left gap-x-14">
+                <div className="pt-[33.56px] w-full flex text-left  justify-between">
                   <div>
-                    <h1 className="text-[22px] font-semibold leading-[44.8px] ">
+                    <h1 className="text-[19px] font-semibold leading-[20px] ">
                       The Little Mermaid
                     </h1>
                   </div>
                   <div>
                     <h1 className="text-[13px]  ">ANNUALIZED NET RETURN</h1>
-                    <h1 className="text-[20px] leading-[36px] ">
-                      <span className="text-[30px] font-semibold leading-[30px]">
+                    <h1 className="text-[18px] leading-[36px] ">
+                      <span className="text-[25px] font-semibold leading-[24px]">
                         64.0%
                       </span>
                       378 days held
