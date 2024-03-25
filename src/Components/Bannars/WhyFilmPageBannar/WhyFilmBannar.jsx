@@ -7,16 +7,14 @@ export default function WhyFilmBannar() {
           <div className="text-center  py-20 px-10 sm:px-20 md:px-28 lg:px-40  flex flex-col items-center gap-4 sm:gap-14 md:gap-28 lg:gap-[150px] ">
             <div className="flex flex-col items-center">
               <span
-                className="font-combon italic  mobile:text-[30px] sm:text-[45px] md:text-[60px] lg:tracking-[-0.07em] lg:text-[72px]
- text-white mobile:leading-[30px] sm:leading-[66.96px] tracking-[-0.07em]
- font-light"
+                className="font-combon italic  mobile:text-[30px] sm:text-[45px] md:text-[60px]  lg:text-[72px]text-white  tracking-[-0.07em] font-light 
+              lg:leading-[66.96px]"
               >
                 Enhance the performance
               </span>
               <p
-                className="text-[30px] sm:text-[45px] md:text-[60px] lg:tracking-[-0.07em] lg:text-[72px]
- text-white leading-[30px] lg:leading-[66.96px] tracking-[-0.07em]
- font-light"
+                className="text-[30px] sm:text-[45px] md:text-[60px] lg:tracking-[-0.07em] lg:text-[72px]text-white  tracking-[-0.07em] font-light 
+              lg:leading-[66.96px]"
               >
                 of a traditional stock and bond portfolio by allocating to film
               </p>

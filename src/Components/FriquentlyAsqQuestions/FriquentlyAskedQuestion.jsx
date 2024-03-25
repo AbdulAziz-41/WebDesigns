@@ -79,7 +79,7 @@ export default function FriquentlyAskedQuestions() {
                       >
                         <p className="flex font-combon font-semibold flex-row justify-between gap-x-3 text-[15px]  md:text-[20px] lg:text-[24px] leading-[20px] sm:leading-[20px] md:leading-[25px] lg:leading-[33.2px] tracking-[-3%]">
                           {faq.question}
-                          <div className="border-black border-[0.5px] rounded-[50%] h-[30px] w-[30px] sm:h-[30px] sm:w-[30px] lg:w-[50px] lg:h-[50px] flex justify-center items-center">
+                          <div className="border-black cursor-pointer border-[0.5px] rounded-[50%] h-[30px] w-[30px] sm:h-[30px] sm:w-[30px] lg:w-[50px] lg:h-[50px] flex justify-center items-center">
                             {visibleIndex === index ? (
                               <img src={top} alt="" />
                             ) : (
