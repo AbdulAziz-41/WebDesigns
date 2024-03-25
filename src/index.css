@@ -8,7 +8,7 @@ body {
 
 
 .primary_heading {
-    @apply text-[35px] sm:text-[40px] md:text-[50px] lg:text-[56px] tracking-[-0.05em] leading-[40.2px] sm:leading-[45px] md:leading-[50px] lg:leading-[67.2px];
+    @apply text-[25px] mobile:text-[30px] sm:text-[40px] md:text-[50px] lg:text-[56px] tracking-[-0.05em] leading-[40.2px] sm:leading-[45px] md:leading-[50px] lg:leading-[67.2px];
 
 }
 
@@ -26,7 +26,7 @@ body {
 }
 
 .howitsWorkCards {
-    @apply py-9 text-left rounded-[8px] px-4 flex bg-white text-black gap-x-6 flex-col justify-between sm:flex-col lg:flex-row items-center w-full font-extrabold
+    @apply py-2 sm:py-4 md:py-9 text-left rounded-[8px] px-4 flex bg-white text-black gap-x-6 flex-col justify-between sm:flex-col lg:flex-row gap-2 items-center w-full font-extrabold
 }
 
 .howitsWorkCardsheading {
@@ -43,4 +43,48 @@ body {
 
 .list_item {
     @apply font-poppins font-normal text-[#D4D4D4] text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] leading-[20px] sm:leading-[22px] md:leading-[22px] lg:leading-[25px]
+}
+
+.btn_primary {
+    @apply bg-[#36613F] py-2 mobile:py-2 sm:py-4 px-6 text-white text-[13px] mobile:text-sm sm:text-lg leading-none tracking-wide rounded-md w-full block text-center
+}
+
+
+.btn_secondary {
+    background-color: transparent;
+    padding: 16px;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.05em;
+    border-radius: 4px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: #36613F;
+    border: 1px solid #36613F;
+    border-radius: 4px;
+
+}
+
+.btn_primary_with_icon {
+    background-color: #36613F;
+    padding: 16px;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.05em;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 265px;
+    text-align: center;
+
+}
+
+.btn_primary_with_icon::after {
+    content: url('../../assets/Svg/buttonArrow.svg');
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+    width: 19.19px;
+    height: 11.98px;
+
+
 }

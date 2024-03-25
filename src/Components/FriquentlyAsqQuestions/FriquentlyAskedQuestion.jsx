@@ -52,9 +52,9 @@ export default function FriquentlyAskedQuestions() {
         <div className="relative max-w-[1440px] mx-auto">
           <div className="relative bg-[#36493A] px-2 md:px-14 lg:px-20 text-white pb-[90px]">
             <img className="absolute z-0 right-0 " src={image} alt="" />
-            <div className="w-3/4 pl-[50px] sm:pl-[100px] md:pl-[150px]  lg:pl-[177px]  pr-[50px] sm:pr-[100px] md:pr-[150px] lg:pr-[185px] pt-4 sm:pt-10  md:pt-16 lg:pt-[80px] pb-2 sm:pb-5 md:pb-10 lg:pb-[60px] ">
+            <div className="sm:w-3/4 pl-2 mobile:pl-[60px] sm:pl-[100px] md:pl-[150px]  lg:pl-[177px]  pr-[50px] mobile:pr-[60px] sm:pr-[100px] md:pr-[150px] lg:pr-[185px] pt-4 sm:pt-10  md:pt-16 lg:pt-[80px] pb-2 sm:pb-5 md:pb-10 lg:pb-[60px] ">
               <p className="learn_more">Learn more</p>
-              <h1 className="primary_heading">
+              <h1 className="primary_heading  relative">
                 Frequently Asked
                 <span className="pb-4 heading">Questions</span>
               </h1>
@@ -65,19 +65,21 @@ export default function FriquentlyAskedQuestions() {
                   {faqData.map((faq, index) => (
                     <div
                       key={index}
-                      className={`answer_question px-2 sm:px-4 md:px-6 lg:px-10 ${
-                        visibleIndex === index ? "visible" : ""
+                      className={`answer_question !px-2 !sm:px-4 lg:px-10 !md:px-6 ${
+                        visibleIndex === index
+                          ? "visible py-2 sm:py-4 md:py-6 lg:py-10"
+                          : ""
                       }`}
                     >
                       <div
-                        className={`question ${
+                        className={`question mobile:py-2 sm:py-4 md:py-5 lg:py-[23px] ${
                           visibleIndex === index ? "visible" : ""
                         }`}
                         onClick={() => toggleVisibility(index)}
                       >
                         <p className="flex font-combon font-semibold flex-row justify-between gap-x-3 text-[15px]  md:text-[20px] lg:text-[24px] leading-[20px] sm:leading-[20px] md:leading-[25px] lg:leading-[33.2px] tracking-[-3%]">
                           {faq.question}
-                          <div className="circle">
+                          <div className="border-black border-[0.5px] rounded-[50%] h-[30px] w-[30px] sm:h-[30px] sm:w-[30px] lg:w-[50px] lg:h-[50px] flex justify-center items-center">
                             {visibleIndex === index ? (
                               <img src={top} alt="" />
                             ) : (
@@ -91,7 +93,7 @@ export default function FriquentlyAskedQuestions() {
                           visibleIndex === index ? "visible" : ""
                         }`}
                       >
-                        <p className="text-[18px] leading-[28px]">
+                        <p className=" text-[15px] leading-5  md:text-[18px] md:leading-[28px]">
                           {faq.answer}
                         </p>
                         <div className="w-full pt-6">

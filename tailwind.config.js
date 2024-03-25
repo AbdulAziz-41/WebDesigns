@@ -10,7 +10,10 @@ export default {
         poppins: ["Poppins", "sans-serif"],
       },
       boxShadow: {
-        custom: "0px 12px 28px 0px #0000004F", // Custom box-shadow
+        custom: "0px 12px 28px 0px #0000004F",
+      },
+      screens: {
+        mobile: "400px",
       },
     },
   },

@@ -21,15 +21,12 @@
     background-color: #D2F1F4;
 }
 
-.answer_question {
-
-    padding: 0px 40px;
-}
+.answer_question {}
 
 .answer_question.visible {
     background-color: #D2F1F4;
     cursor: pointer;
-    padding: 40px;
+
 }
 
 .circle {

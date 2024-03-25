@@ -9,7 +9,7 @@ export default function RecentOffers() {
   return (
     <>
       <div className="bg-[#EFEFEF]">
-        <div className="max-w-[1440px] mx-auto px-10 sm:px-15 lg:px-20  pt-10  text-[#1D1D1D]">
+        <div className="max-w-[1440px] mx-auto px-4 mobile:px-10 sm:px-15 lg:px-20 pt-3  sm:pt-10  text-[#1D1D1D]">
           <h1 className=" pb-4 font-medium heading primary_heading">
             Recent Offerings
           </h1>
