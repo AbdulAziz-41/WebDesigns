@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
   const login = (username, password) => {
-    if (username === "user" && password === "123") {
+    if (username === "test@gmail.com" && password === "123") {
       // Example logic
       setUser({ name: username });
     }
